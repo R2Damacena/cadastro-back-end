@@ -39,7 +39,7 @@ public class MainController {
     }
 
     @PutMapping(path="/update/{id}") // Map ONLY PUT Requests
-    public @ResponseBody String updateUser (@PathVariable Integer id, @RequestBody User user) {
+    public @ResponseBody String updateUser (@PathVariable String id, @RequestBody User user) {
         // @ResponseBody means the returned String is the response, not a view name
         // @RequestBody means it is a parameter from the PUT request
         // @PathVariable means it is a parameter from the URL
